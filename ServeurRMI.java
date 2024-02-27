@@ -18,8 +18,8 @@ public class ServeurRMI implements ServiceRMI {
             ServeurRMI serveur = new ServeurRMI();
             ServiceRMI stub = (ServiceRMI) UnicastRemoteObject.exportObject(serveur, 0);
 
-            // Création d'un registre RMI sur le port 1099
-            Registry registry = LocateRegistry.createRegistry(1099);
+            // Création d'un registre RMI sur le port 10000
+            Registry registry = LocateRegistry.createRegistry(10000);
             
             // Enregistrement du stub dans le registre
             registry.rebind("ServiceRMI", stub);
