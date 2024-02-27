@@ -20,9 +20,8 @@ La détermination de la méthode de génération des souches dans un programme R
 
 Si aucune référence explicite à l'outil rmic n'est présente dans ce processus, il est probable que les souches soient générées automatiquement par le runtime Java lors de l'exécution.
 
-Lorsqu'une génération explicite des souches est effectuée, un appel à rmic est inclus dans le processus de compilation avec une commande telle que :
+Lorsqu'une génération explicite des souches est effectuée, un appel à rmic est inclus dans le processus de compilation avec une commande telle que :  rmic ServeurRMI
 
-> rmic ServeurRMI
 Cependant, si aucune mention de rmic n'est observée pendant la compilation, le système RMI génère probablement les souches de manière implicite lors de l'exécution.
 
 La génération implicite des souches est une fonctionnalité pratique du runtime RMI, simplifiant le processus pour les développeurs en automatisant la création des classes de stub. Ainsi, même en l'absence d'appels directs à rmic pendant la compilation, le système RMI prend en charge la génération des souches au moment de l'exécution. La compréhension de ces nuances facilite la détermination du mode de génération des souches dans un contexte RMI spécifique.
