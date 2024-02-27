@@ -6,8 +6,8 @@ public class ClientRMI {
 
     public static void main(String[] args) {
         try {
-            // Localisation du registre RMI sur le port 1099
-            Registry registry = LocateRegistry.getRegistry("localhost", 1099);
+            // Localisation du registre RMI sur le port 10000
+            Registry registry = LocateRegistry.getRegistry("localhost", 10000);
             
             // Récupération du stub du serveur
             ServiceRMI stub = (ServiceRMI) registry.lookup("ServiceRMI");
