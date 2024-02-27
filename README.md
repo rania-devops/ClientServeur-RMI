@@ -8,7 +8,7 @@ L'interface ServiceRMI définit un service distant qui expose la méthode conver
 
 2. Serveur RMI 
 
-Le serveur RMI, implémentant l'interface ServiceRMI, offre une implémentation concrète de la méthode convertirEnMajuscules. Dans le code du serveur, nous créons un objet Registry sur le port 1099 et enregistrons le stub du serveur avec le nom "ServiceRMI". Le serveur est prêt à accepter les appels distants.
+Le serveur RMI, implémentant l'interface ServiceRMI, offre une implémentation concrète de la méthode convertirEnMajuscules. Dans le code du serveur, nous créons un objet Registry sur le port 10000 et enregistrons le stub du serveur avec le nom "ServiceRMI". Le serveur est prêt à accepter les appels distants.
 
 3. Client RMI 
 
